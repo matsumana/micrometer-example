@@ -11,7 +11,12 @@ import info.matsumana.example.entity.Todo;
 public interface TodoRepository {
 
     @Select("""
-    SELECT `id`, `title`, `detail`, `finished` FROM `todo` ORDER BY `id` DESC
+    SELECT `id`
+         , `title`
+         , `detail`
+         , `finished`
+      FROM `todo`
+  ORDER BY `id` DESC
     """)
     List<Todo> findAll();
 }

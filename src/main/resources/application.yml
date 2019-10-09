@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver  # https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-usagenotes-connect-drivermanager.html
     url: jdbc:mysql://127.0.0.1:13306/db0?characterEncoding=UTF8&useSSL=false&allowPublicKeyRetrieval=true
     username: test
     password: test
